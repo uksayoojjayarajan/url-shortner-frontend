@@ -1,0 +1,32 @@
+/* Full black background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* White popup container */
+  .app-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.1), 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 450px;
+    transition: 0.3s;
+  }
+  
+  /* Title Styling */
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
