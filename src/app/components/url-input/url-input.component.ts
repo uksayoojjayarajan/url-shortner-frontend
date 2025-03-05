@@ -43,11 +43,11 @@ export class UrlInputComponent {
  
   isValidUrl(url: string): boolean {
     try {
-      new URL(url);
-      const urlPattern = /^(https?:\/\/)?([a-zA-Z0-9.-]+)(:[0-9]+)?(\/.*)?$/;
-      return urlPattern.test(url);
-    } catch (_) {
+      new URL(url);  
+      return true;
+    } catch {
       return false;
     }
   }
+  
 }
