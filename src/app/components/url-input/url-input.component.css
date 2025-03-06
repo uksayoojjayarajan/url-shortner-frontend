@@ -1,4 +1,4 @@
-/* Input container */
+
 .input-container {
   display: flex;
   gap: 10px;
@@ -6,7 +6,6 @@
   flex-wrap: wrap;
 }
 
-/* Clean input field */
 input {
   flex: 1;
   padding: 12px;
@@ -21,7 +20,7 @@ input:focus {
   border-color: #007bff;
 }
 
-/* Standard button */
+
 button {
   background: #007bff;
   color: white;

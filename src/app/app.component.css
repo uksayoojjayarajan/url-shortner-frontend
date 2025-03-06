@@ -1,4 +1,4 @@
-/* Full black background */
+
 body {
     font-family: 'Poppins', sans-serif;
     background: #121212;
@@ -10,7 +10,7 @@ body {
     margin: 0;
   }
   
-  /* White popup container */
+
   .app-container {
     text-align: center;
     background: #ffffff;
@@ -21,8 +21,7 @@ body {
     max-width: 450px;
     transition: 0.3s;
   }
-  
-  /* Title Styling */
+
   h1 {
     font-size: 24px;
     font-weight: 600;

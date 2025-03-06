@@ -1,4 +1,4 @@
 <p *ngIf="shortUrl">
-  Shortened URL: <a [href]="shortUrl" target="_blank">{{ shortUrl }}</a>
+  Shortened URL:
+  <a href="#" (click)="redirectToOriginalUrl($event)">{{ shortUrl }}</a>
 </p>
-

@@ -12,6 +12,10 @@ export class UrlShortnerService {
   constructor(private http: HttpClient) {}
 
   shortenUrl(longUrl: string): Observable<{ shortUrl: string }> {
-    return this.http.post<{ shortUrl: string }>(`${this.apiUrl}`, { longUrl });
+    return this.http.post<{ shortUrl: string }>(`${this.apiUrl}shorten/shorturl`, { longUrl });
   }
+
+     getOriginalUrl(shortCode: string): Observable<{ originalUrl: string }> {
+     return this.http.get<{ originalUrl: string }>(`${this.apiUrl}shorten/shorturl/${shortCode}`);
+   }
 }
