@@ -20,7 +20,7 @@ export class UrlResultComponent {
 
     if (!this.shortUrl) return;
 
-    const shortCode = this.shortUrl.split('/').pop()!; 
+    const shortCode = this.shortUrl.split('=').pop()!; 
 
     this.urlShortnerService.getOriginalUrl(shortCode).subscribe({
       next: response => {
