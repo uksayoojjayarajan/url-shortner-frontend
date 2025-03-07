@@ -26,6 +26,7 @@ export class UrlResultComponent {
       next: response => {
         const newTab = window.open('', '_blank');
         if (newTab) {
+          alert(response.originalUrl)
           newTab.location.href = response.originalUrl; 
         } else {
           alert('Please allow pop-ups to open the link.');
