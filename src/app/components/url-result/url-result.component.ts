@@ -20,13 +20,12 @@ export class UrlResultComponent {
 
     if (!this.shortUrl) return;
 
-    const shortCode = this.shortUrl.split('=').pop()!; 
+    const shortCode = this.shortUrl.split('/').pop()!; 
 
     this.urlShortnerService.getOriginalUrl(shortCode).subscribe({
       next: response => {
         const newTab = window.open('', '_blank');
         if (newTab) {
-          alert(response.originalUrl)
           newTab.location.href = response.originalUrl; 
         } else {
           alert('Please allow pop-ups to open the link.');

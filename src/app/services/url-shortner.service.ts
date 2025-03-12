@@ -17,9 +17,8 @@ export class UrlShortnerService {
   }
 
   getOriginalUrl(shortCode: string): Observable<{ originalUrl: string }> {
-    return this.http.get<{ originalUrl: string }>(`${this.apiUrl}/shorten/shorturl`, {
-      params: { shortCode }
-    });
-  }
+    return this.http.get<{ originalUrl: string }>(`${this.apiUrl}/shorten/shorturl/${shortCode}`);
+}
+
   
 }
